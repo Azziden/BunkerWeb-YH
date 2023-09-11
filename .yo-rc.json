@@ -1,0 +1,18 @@
+{
+  "bunkerweb": {
+    "beautifulName": "BunkerWeb",
+    "defaultPathOption": "/bunkerweb",
+    "forceSecureAccess": true,
+    "secureAccessOption": false,
+    "adminUserOption": false,
+    "enDescription": "BunkerWeb App for Yunohost",
+    "frDescription": "BunkerWeb App for Yunohost",
+    "urlApp": "",
+    "urlDockerHub": "https://hub.docker.com/r/bunkerity/bunkerweb/tags?page=1&name=1.5.1",
+    "authorName": "Azziden",
+    "authorEmail": "",
+    "idName": "bunkerweb",
+    "reverseProxyProtocol": "http",
+    "scriptsLoadSave": false
+  }
+}

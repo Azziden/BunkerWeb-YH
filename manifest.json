@@ -1,0 +1,46 @@
+{
+    "name": "BunkerWeb",
+    "id": "bunkerweb",
+    "url": "",
+    "packaging_format": 1,
+    "description": {
+        "en": "BunkerWeb App for Yunohost",
+        "fr": "BunkerWeb App pour Yunohost"
+    },
+    "version": "1.5.2",
+    "license": "AGPL-3.0",
+    "maintainer": {
+        "name": "",
+        "email": ""
+    },
+    "requirements": {
+        "yunohost": ">= 11.2.2"
+    },
+    "services": [
+        "nginx"
+     ],
+    "multi_instance": true,
+    "arguments": {
+        "install" : [
+            {
+                "name": "domain",
+                "type": "domain",
+                "ask": {
+                    "en": "Choose a domain for BunkerWeb",
+                    "fr": "Choisissez un domaine pour BunkerWeb"
+                },
+                "example": "app.domain.org"
+            },
+            {
+                "default": true,
+                "name": "admin",
+                "type": "user",
+                "ask": {
+                    "en": "Choose the BunkerWeb administrator (must be an existing YunoHost user)",
+                    "fr": "Choisissez l'administrateur BunkerWeb (doit etre un utilisateur Yunohost existant)"
+                },
+                "default": ""
+            }
+        ]
+    }
+}
